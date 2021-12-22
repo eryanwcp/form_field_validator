@@ -193,8 +193,8 @@ class MatchValidator {
 /// calls the given callback to validate an input.
 class CallbackValidator<T> extends FieldValidator<T> {
   CallbackValidator({
-    @required String errorText,
-    @required this.validator,
+    required String errorText,
+    required this.validator,
   }) : super(errorText);
 
   final CallbackValidatorFunction<T> validator;
